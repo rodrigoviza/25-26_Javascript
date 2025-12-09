@@ -6,21 +6,22 @@
 </head>
 <body>
 <!--
-    0. Research what a palindrome is!
     1. Make a textbox and button. The textbox will be where you type the string you want to test.
-        The button will activate
+        The button will activate the function to test the string.
     2. Write a Javascript function that will take the text from the textbox
         and figure out whether it is a palindrome.
-    3. Based on the result of the function, the page will display
+    3. Based on the result of the function, the page will display either a green message
+        that the word is a palindrome, or a red message that it is not.
 -->
 
-<input type ="text" onkeydown="exampleFunction()"><br />
-<button onclick="exampleFunction()">Test</button>
+<input type="text" id="text" name="string"/><br>
+<button onclick="palindrome()">Test</button><br />
+<div id="message"></div>
+
 <script>
-    function exampleFunction(){
+    function palindrome(){
 
     }
-
 
 </script>
 </body>
