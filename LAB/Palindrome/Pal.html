@@ -20,8 +20,14 @@
 
 <script>
     function palindrome(){
-        const original = document.getElementById('word').value;
-        const reverse =
+        const original = document.getElementById('text').value;
+        const reverse = original.split('').reverse().joint('');
+        if (original === reverse) {
+            output.innerHTML = "<font color='green'>PALINDROME!</font>";
+        }
+        else {
+            output.innerHTML = "<font color='red'>NO!</font>";
+        }
 
     }
 
